@@ -1,0 +1,72 @@
+body { 
+    font-family: Arial, sans-serif; 
+    background: #f4f6f9; 
+    margin: 0; 
+}
+
+/* Dashboard */
+.dashboard {
+    background: linear-gradient(90deg, #f7df0b, #f39c12);
+    color: black;
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.dashboard img {
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    border: 2px solid #fff;
+}
+
+.dashboard h1 { margin: 0; font-size: 28px; }
+.dashboard .stats { margin-top: 10px; font-size: 18px; }
+
+.dashboard .buttons { margin-top: 15px; }
+.dashboard .buttons button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    margin: 5px;
+    transition: 0.02s ease;
+}
+
+.delete-all-btn { background: #e74c3c; }
+.toggle-btn { background: #3498db; }
+.dashboard .buttons button:hover { opacity:0.9; transform:scale(1.09); }
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* Input & Buttons */
+input { padding: 10px; margin: 5px; width: 23%; border-radius: 5px; border:2px solid #ccc; }
+.add-btn { background: #27ae60; color: white; cursor: pointer; border: none; border-radius: 5px; padding: 10px 20px; }
+.edit-btn { background: #f39c12; color: white; cursor: pointer; border: none; border-radius: 5px; padding: 5px 10px; }
+.delete-btn { background: #e74c3c; color: white; cursor: pointer; border: none; border-radius: 5px; padding: 5px 10px; }
+button:hover { opacity:0.9; transform:scale(1.05); }
+
+/* Table */
+table { width:100%; border-collapse:collapse; margin-top:20px; font-size:16px; }
+table, th, td { border:1px solid #ddd; }
+th { background:#34495e; color:white; }
+th, td { padding:12px; text-align:center; }
+tr:hover { background:#f0f0f0; transition:0.3s; }
+
+/* Search */
+.search-bar { margin: 15px 0; }
+.search-bar input { width:30%; padding:8px; }
+
+/* Hide table by default */
+#userTable { display:none; }

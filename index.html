@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/CTU_new_logo.png/960px-CTU_new_logo.png" alt="CTU Logo">
+    <h1>Student Management System</h1>
+    <div class="stats">Total Students: <span id="totalRecords">0</span></div>
+    <div class="buttons">
+        <button class="delete-all-btn" onclick="deleteAll()">Delete All DATA?</button>
+        <button class="toggle-btn" onclick="toggleTable()">Show / Hide Data</button>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Add / Edit Student</h2>
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Search by ID, name or email" onkeyup="searchStudent()">
+    </div>
+    <br><br>
+    
+    <input type="text" id="studentId" placeholder="Enter Student ID">
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="email" id="email" placeholder="Enter Email">
+    <input type="text" id="course" placeholder="Enter Course">
+    <button class="add-btn" onclick="addUser()">Save</button>
+
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Course</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
